@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+ 
+    <!--Link do CSS/ Bootstrap-->
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+ 
+  <!--Link do Favicon -->
+ 
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!--Título-->
+  
+  <title>LocaLar</title>
+</head>
+
+<!--Navbar/ Cabeçalho - Localar-->
+<body class="bg-dark">
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-lg-center justify-content-lg-start">
+               
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-lg-2 justify-content-center mb-md-0">
+              <p class="fs-5 px-1 py-1"><strong>LocaLar</strong></p>
+              <li><a href="#" class="nav-link px-2 text-white">Página inicial</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Catálogo</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Sobre</a></li>
+            </ul>
+            
+            
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Pesquisar..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Entrar</button>
+              <button type="button" class="btn btn-info">Cadastre-se</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- Landing Page - LocaLar -->
+
+    <div class="container">
+        <div class="row text-white my-lg-5">
+            <div class="col-md-5  my-lg-5  pe-lg-5">
+                <h1><strong>Sinta-se em casa</strong></h1>
+                <h4>Encontre o imóvel que é 
+                  a sua cara.
+                </h4>
+
+                <!-- Popover -->
+
+                <button type="button" tabindex="0" class="btn btn-primary btn-lg py-3 px-5 mt-3 me-1" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Conheça nossos imóveis">Vamos começar</button>   
+            </div>
+
+            <div class="col-md-7 my-5 ps-5 pe-0">
+                <img class="img-fluid" src="img/undraw_House_searching_re_stk8.png" alt="imagem de sala de estar 1">
+            </div>
+        </div>
+         
+        
+        <!-- Spinner-->
+        <div class="d-flex align-items-center text-secondary">
+          <strong>Carregando...</strong>
+          <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+        </div>
+
+        <!-- Cards - Imóveis --> 
+
+        <div class="row m-5">
+          <div class="col-md-3">
+            <div class="card m-2">
+              <img class="card-img-top h-100" src="img/undraw_business_deal_cpi9 (2) 1.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text text-center"><strong>Negociações facilitadas</strong><br>Alugue de forma rápida,
+                  fácil e sem burocracia 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-md-3 ">
+            <div class="card m-2">
+              <img class="card-img-top h-100" src="img/undraw_personal_finance_tqcd 1.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text text-center"><strong>Gerencie suas contas</strong><br>Acompanhe em tempo real os seus débitos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card m-2">
+              <img class="card-img-top h-100" src="img/undraw_conversation_h12g 1.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text text-center"><strong>Moradias compartilhadas</strong><br>Encontre pessoas que 
+                  desejam alugar imóveis 
+                </p>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="col-md-3">
+            <div class="card m-2" aria-hidden="true">
+              <img src="/img/loading.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title placeholder-glow">
+                 <span class="placeholder col-6"></span>
+                </h5>
+                <p class="card-text placeholder-glow">
+                  <span class="placeholder col-7"></span>
+                  <span class="placeholder col-8"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        
+
+        <!-- Carrossel - Imóveis --> 
+
+        <div class="row justify-content-center py-2">
+            <div class="col-md-12 my-5 justify-content-center">
+
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/aldward-castillo-iPvr1zkCVG0-unsplash.jpg" class="d-block w-75 mx-auto" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/nathan-fertig-FBXuXp57eM0-unsplash.jpg" class="d-block w-75 mx-auto" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/brian-babb-XbwHrt87mQ0-unsplash.jpg" class="d-block w-75 mx-auto" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+          </div>
+
+           <!-- Tab - Modalidades de locação-->
+          <p class="text-center fs-5 mt-5 text-white"><strong>Modalidades de locação</strong></p>
+         
+
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="fiador-tab" data-bs-toggle="tab" data-bs-target="#fiador-tab-pane" type="button" role="tab" aria-controls="fiador-tab-pane" aria-selected="true">Fiador</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="cheque-caucao-tab" data-bs-toggle="tab" data-bs-target="#cheque-caucao-tab-pane" type="button" role="tab" aria-controls="cheque-caucao-tab-pane" aria-selected="false">Cheque caução</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="seg-fianca-tab" data-bs-toggle="tab" data-bs-target="#seg-fianca-tab-pane" type="button" role="tab" aria-controls="seg-fianca-tab-pane" aria-selected="false">Seguro-fiança</button>
+            </li>
+           </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active text-white p-3" id="fiador-tab-pane" role="tabpanel" aria-labelledby="fiador-tab" tabindex="0">
+              <h2>Fiador</h2>
+              <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="tab-pane fade text-white p-3" id="cheque-caucao-tab-pane" role="tabpanel" aria-labelledby="cheque-caucao-tab" tabindex="0">
+              <h2>Cheque caução</h2>
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over <br>
+                 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words</p>
+            </div>
+            <div class="tab-pane fade text-white p-3" id="seg-fianca-tab-pane" role="tabpanel" aria-labelledby="seg-fianca-tab" tabindex="0">
+              <h2>Seguro-fiança</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised<br>
+                 words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p>
+            </div>
+          </div>
+
+        <!-- Tabela - Imóveis disponíveis -->
+
+        <div class=" col-md-12 mt-5">
+          <p class="text-center fs-5 mb-5 text-white"><strong>Imóveis disponíveis</strong></p>
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Finalidade</th>
+                <th scope="col">Imóvel</th>
+                <th scope="col">Bairro</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">0001</th>
+                <td>Locação</td>
+                <td>Apartamento</td>
+                <td>Centro</td>
+                <td>R$1.500,00</td>
+              </tr>
+              <tr>
+                <th scope="row">0002</th>
+                <td>Locação</td>
+                <td>Apartamento</td>
+                <td>Centro</td>
+                <td>R$1.200,00</td>
+              </tr>
+              <tr>
+                <th scope="row">0003</th>
+                <td>Locação</td>
+                <td>Casa</td>
+                <td>Centro</td>
+                <td>R$1.000,00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="text-end fs-5 mt-2 text-secondary">Veja mais...</p>
+
+          
+           <!-- Acordion - Perguntas frequentes -->
+          
+          <p class="text-center fs-5 mt-5 text-white"><strong>Perguntas frequentes</strong></p>
+         
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Como posso visitar um imóvel?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Quais os requisitos para a locação de imóveis
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Quanto tempo leva o processo de locação de um imóvel
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just<br>
+                   filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário - Contate-nos -->
+
+          <p class="text-center fs-5 mt-5 text-white"><strong>Contate-nos</strong></p>
+          
+            
+          </div class="row-md-6 mx-auto">
+            <form class="mb-5 text-white">
+              <div class="row mx-5">
+                <div class="col-md-6 mx-auto mb-2">
+                  <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Digite seu nome">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputSurname" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" id="exampleInputSurname" placeholder="Digite seu sobrenome">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Endereço de e-mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@example.com">
+                    <div id="emailHelp" class="form-text text-secondary">Nós nunca compartilharemos seu email com ninguém.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPhone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="examplePhone" placeholder="(00)0000-0000" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Digite aqui a sua mensagem" rows="3"></textarea>
+                  </div>
+                  <div class="col-md-1 mt-5 mx-auto" >
+                    <button href="#staticBackdrop" data-bs-toggle="modal" type="submit" class="btn btn-primary btn-success">Enviar</button>
+                  </div>
+                </div>                
+            </form>     
+          </div>
+      </div>
+
+      <!-- Pagination -->
+        <div class="row-md-6 align-items-center">
+          <div class="col-md-2 mx-auto">
+            <nav aria-label="...">
+              <ul class="pagination ">
+                <li class="page-item disabled">
+                  <a class="page-link">Anterior</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Próximo</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+
+      <!-- Modal - Mensagem enviada-->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Sua mensagem foi enviada</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Agradecemos o contato.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Boas vindas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Olá, seja bem vindo à LocaLar!
+              Espero que encontre o que procura aqui =)
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Off-Canvas - Sidebar -->
+
+     
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script>
+        var modal = new bootstrap.Modal(document.getElementById('exampleModal'), {})
+
+        setTimeout(function(){ 
+          modal.show()
+        }, 10000);
+
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+        })
+
+      </script>
+      
+
+  <footer>
+
+  </footer>
+</body>
+</html>
